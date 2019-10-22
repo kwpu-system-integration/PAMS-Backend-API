@@ -7,4 +7,6 @@ public interface UserService {
 	public CommonResponseVO signUpUser(User user);
 
 	public CommonResponseVO getUserList(User user);
+
+	public CommonResponseVO updateUserInfo(User user);
 }
