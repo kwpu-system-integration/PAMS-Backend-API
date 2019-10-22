@@ -36,4 +36,12 @@ public class UserController {
 		
 		return response;
 	}
+	
+	@RequestMapping(value = "/updateUserInfo", method = RequestMethod.PUT)
+	public @ResponseBody CommonResponseVO updateUserInfo(@RequestBody User user) {
+		
+		CommonResponseVO response = userService.updateUserInfo(user);
+		
+		return response;
+	}
 }
